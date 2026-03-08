@@ -1,11 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+}
+
 .header {
-    top: 0;
-    left: 0;
+    z-index: 10;
     width: 100%;
     height: 100px;
-    position: fixed;
-    display: flex;
-    background-color: #FFA95A;
+    position: relative;
+    display: block;
+    background-color: #fff5ec;
 
     padding-left: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -24,31 +35,111 @@
     text-decoration: none;
     color: black;
     padding: 10px;
-    border-width: 3px;
+    border-width: 2px;
     border-radius: 10px;
     border-style:solid;
-    border-bottom-width: 10px;
 }
 
 #links:hover {
     color: white;
+    background-color: orange;
 }
 
-.main-content {
-    margin-top: 120px;
+.hero{
+    flex: 1;
+    width: 100%;
+    padding-bottom: 50vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.454),rgba(0,0,0,0.65)),
+    url("https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg") center/cover;
+    color:white;
+    position:relative;
 }
 
-#banner {
-    background-color: #FF8C00;
+.hero h1{
+font-family:'Playfair Display';
+font-size:70px;
+letter-spacing:-2px;
+}
+
+.hero p{
+margin-top:10vh;
+font-size:22px;
+}
+
+.section-title {
+    text-align: center;
+    color: #FF8C00;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.pizza-card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.pizza-card:hover{
+transform:translateY(-15px) scale(1.02);
+box-shadow:
+0 30px 40px rgba(196,69,54,0.2),
+0 0 40px rgba(243,179,61,0.25);
+}
+
+.pizza-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:.8s;
+}
+
+.pizza-card:hover img{
+transform:scale(1.1) rotate(2deg);
+}
+
+.pizza-info{
+padding:20px;
+text-align:center;
+}
+
+.pizza-info h3{
+color:#c44536;
+font-size:22px;
+}
+
+.ingredients{
+font-size:14px;
+color:#777;
+margin:10px 0;
+}
+
+.price{
+font-weight:700;
+font-size:22px;
+margin-bottom:10px;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     font-size: 1rem;
-    background-color: #FFA95A;
+    background-color: #fac79c;
     text-align: center;
     align-items: center;
     font-weight:bold;
