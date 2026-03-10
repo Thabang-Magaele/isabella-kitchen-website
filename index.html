@@ -14,24 +14,46 @@
         </p>
         
         <div class="links">
-            <a id="links" href="index.html">Home</a>
-            <a id="links" href="order.html">Order</a>
-            <a id="links" href="about.html">About</a>
-            <a id="links" href="contact.html">Contact</a>
-        </div>
+            <a id="links" href="#home">Home</a>
+            <a id="links" href="#menu">Order</a>
+            <a id="links" href="#about">About</a>
+            <a id="links" href="#contact">Contact</a>
 
+            <script>
+            document.querySelectorAll('a[href^="#menu"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+                });
+            </script>              
+        </div>
     </header>
 
 <section class="hero">
     <div>
         <h1>Isabella's Kitchen</h1>
         <p>Wood Fired • Handmade • South African Inspired</p>
+        <a id="hero-button" href="#menu">Let's Eat!</a>
+
+            <script>
+            document.querySelectorAll('a[href^="#menu"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+                });
+            </script>  
     </div>
 </section>
 
-<section class="info-section1">
+<section class="info-section1" id="menu">
     <div class="container">
-        <h2 class="section-title">Signature Pizzas</h2>
+        <h2 class="section-title" id="order">Signature Pizzas</h2>
             <div class="menu-grid">
 
                 <div class="pizza-card">
@@ -92,8 +114,124 @@
         </div>    
 </section>
 
-<section class="info-section2">
+<section class="info-section1" id="about">
+    <div class="container">
+        <h2 class="section-title" id="order">About Us</h2>
+            <div class="menu-grid">
 
+                <div class="pizza-card-about">
+                    <div class="pizza-info">
+                        <h3>Not Just Pizza</h3>
+                        <p class="ingredients-about">
+                            At Isabella's Kitchen, food is more than a meal — it's an experience. 
+                            We bring people together through warm hospitality, fresh ingredients, 
+                            and recipes inspired by both Italian tradition and South African flavour. 
+                            Every visit is about comfort, community, and unforgettable taste.
+                        </p>
+                    </div>
+                    <img src="images/about1.jpg">
+                </div>
+                
+                <div class="pizza-card-about">
+                    <img src="images/about2.jpg">
+                    <div class="pizza-info">
+                        <h3>All Authentic Italian</h3>
+                        <p class="ingredients-about">
+                            Our pizzas are crafted using traditional Italian techniques, from slow-fermented dough 
+                            to rich tomato bases and carefully selected toppings. Cooked in a wood-fired oven, 
+                            each pizza delivers the perfect balance of crispness, flavour, and authenticity.
+                        </p>                                              
+                    </div>
+                </div>
+
+                <div class="pizza-card-about">
+                    <div class="pizza-info">
+                        <h3>Handmade With Love</h3>
+                        <p class="ingredients-about">
+                            Every pizza is prepared by hand, using fresh ingredients and genuine passion. 
+                            From stretching the dough to the final garnish, we believe great food comes 
+                            from patience, care, and attention to detail — because quality should always 
+                            be tasted in every bite.
+                        </p>                                             
+                    </div>
+                    <img src="images/about3.jpg">
+
+                </div>
+             
+
+            </div>
+        </div>  
+        
+            <script>
+            document.querySelectorAll('a[href^="#about"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+                });
+            </script>         
+
+</section>
+
+<section class="info-section1" id="conact">
+    <div class="container">
+        <h2 class="section-title" id="contact">Contact Us</h2>
+            <div class="menu-grid">
+
+                <div class="pizza-card-about">
+                    <div class="pizza-info">
+                        <h3>We Love Feedback! Reach Out</h3>
+
+    <h2>Send Us A Message</h2>
+    
+    <p>Email address:</p>
+    <textarea id="email-address" name="email-address" rows="2" cols="50" placeholder="example@gmail.com"></textarea>
+    <br>
+
+    <p>Subject:</p>
+    <textarea id="subject" name="subject" rows="2" cols="50" placeholder="Enter the subject..."></textarea>
+    <br>
+
+    <p>Message:</p>
+    <textarea id="message" name="message" rows="10" cols="50" placeholder="Write your message here..."></textarea>
+    <br>
+
+    <button class="submit" type="submit" onclick="sendFeedback()">Submit</button>
+
+    <script>
+      function sendFeedback() {
+        const email = document.getElementById('email-address').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!email || !subject || !message) {
+          alert("Please fill in all fields before submitting.");
+          return;
+        }
+
+        const mailtoLink = `mailto:magaelethabang@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + email + "\n\n" + message)}`;
+        window.location.href = mailtoLink;
+
+        alert("Thank you for your feedback! We'll get back to you as soon as possible.");
+      }
+    </script>                                            
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+            <script>
+            document.querySelectorAll('a[href^="#contact"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+                });
+            </script>         
 
 </section>
 
@@ -103,9 +241,10 @@
            <p>Check Out Our Socials <br> </p>
 
             <div class="social-icons">
-               <a href="https://www.instagram.com/h2oautospawhiteriver/" title="Instagram" target="_blank"><ion-icon name="logo-instagram"  class="social-icon" ></ion-icon> </a> 
-               <a href="https://web.facebook.com/profile.php?id=61578030370368" title="Facebook" target="_blank"> <ion-icon name="logo-facebook"  class="social-icon" ></ion-icon> </a> 
-               <a href="https://www.tiktok.com/@h2oautospa.whiter?lang=en-GB" title="TikTok" target="_blank"> <ion-icon name="logo-tiktok"  class="social-icon" ></ion-icon> </a>                 
+             <!--  <a href="https://www.instagram.com/h2oautospawhiteriver/" title="Instagram" target="_blank"><ion-icon name="logo-instagram"  class="social-icon" ></ion-icon> </a> -->
+               <a href="https://web.facebook.com/isabellasfood/?_rdc=1&_rdr#" title="Facebook" target="_blank"> <ion-icon name="logo-facebook"  class="social-icon" ></ion-icon> </a> 
+              <!-- <a href="https://www.tiktok.com/@h2oautospa.whiter?lang=en-GB" title="TikTok" target="_blank"> <ion-icon name="logo-tiktok"  class="social-icon" ></ion-icon> </a>                 -->
+               <a href="https://x.com/isabellasfood" title="Twitter" target="_blank"> <ion-icon name="logo-twitter"  class="social-icon" ></ion-icon> </a>                 
             </div>         
 
     <p>Address: Cnr Impala, Danie Joubert St, White River, 1240</p>
@@ -121,5 +260,50 @@
     </p>
     <p>© 2024 Thabang Magaele. All rights reserved.</p>
     </footer>
+
+<script>
+/* cart 
+let cart=0
+
+function orderPizza(name,price){
+
+cart++
+
+document.getElementById("cartCount").innerText=cart
+
+let modal=document.getElementById("modal")
+
+modal.innerHTML=`🍕 ${name} added<br><small>R${price}</small>`
+
+modal.classList.add("show")
+
+setTimeout(()=>{
+modal.classList.remove("show")
+},2500)
+
+}
+*/
+
+/* scroll animation */
+
+const cards=document.querySelectorAll(".pizza-card")
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.style.opacity="1"
+entry.target.style.transform="translateY(0)"
+}
+})
+})
+
+cards.forEach(card=>{
+card.style.opacity="0"
+card.style.transform="translateY(40px)"
+card.style.transition="all .8s"
+observer.observe(card)
+})
+
+</script>    
 </body>
 </html>
