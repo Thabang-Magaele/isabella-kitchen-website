@@ -192,6 +192,70 @@ font-size:22px;
 margin-bottom:10px;
 }
 
+/* Maps Section*/
+#map {
+    margin: 2rem auto;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fac79c;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(2, 136, 209, 0.2);
+    max-width: 1000px;
+}
+
+@media (max-width: 450px) {
+      #map {
+        height: 40vh;
+        margin: 1rem;
+    }
+  }
+
+  #maps-link {
+    text-decoration: none;
+    color: #c44536;
+  }
+
+
+/*Loading screen for maps*/
+.loader {
+  display: block;
+  align-items: center;
+}
+
+.bar {
+  display: inline-block;
+  width: 10px;
+  height:60px;
+  background-color: black;
+  border-radius: 10px;
+  animation: scale-up4 1s linear infinite;
+}
+
+.bar:nth-child(2) {
+  height: 35px;
+  margin: 0 5px;
+  animation-delay: .25s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: .5s;
+}
+
+@keyframes scale-up4 {
+  20% {
+    background-color: red;
+    transform: scaleY(1.5);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
+}
+/*End loading screen*/  
+
 .footer {
     font-family:'Playfair Display';
     width: 100%;
