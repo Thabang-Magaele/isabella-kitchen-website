@@ -8,18 +8,51 @@ body {
 }
 
 .header {
-    z-index: 10;
+    z-index: 1000;
     width: 100%;
     height: 100px;
-    position: relative;
+    position: fixed;
     display: block;
     background-color: #fff5ec;
     color:#c44536;
-    padding-left: 10px;
+    padding-left: 20px;
     font-family:'Playfair Display';
     font-size:30px;
     letter-spacing:-2px;
     font-weight: bold;    
+  transition: transform 0.3s ease; /* Smooth transition for hiding/showing */    
+}
+
+#header-logo {
+    position: fixed;
+    display: block;
+    background-color: #fff5ec;
+    color:#c44536;
+    margin: 20px;
+    margin-top: 20px;
+    font-family:'Playfair Display';
+    font-size:30px;
+    font-weight: bold;   
+    text-decoration: none;
+
+    padding: 10px;
+    border-width: 1.5px;
+    border-radius: 0px;    
+    transition:0.5s;
+
+}
+
+#header-logo:hover{
+    color: white;
+    background-color: #c44536;
+    transition:0.5s;    
+
+  
+}
+
+/* Class added by JavaScript when the header should be hidden */
+.header--hidden {
+  transform: translateY(-100%); /* Moves the header entirely out of the viewport */
 }
 
 .links {
@@ -52,6 +85,7 @@ body {
 .hero{
     flex: 1;
     width: 100%;
+    margin-top: 11vh;
     padding-bottom: 50vh;
     display:flex;
     align-items:center;
