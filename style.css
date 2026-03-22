@@ -347,7 +347,10 @@ margin-bottom:10px;
  
 /* Tablet — up to 768px */
 @media (max-width: 768px) {
- 
+ body {
+        overflow-x: hidden;
+ }
+
     .header {
         height: 80px;
         font-size: 24px;
@@ -422,6 +425,10 @@ margin-bottom:10px;
  
 /* Mobile — up to 480px */
 @media (max-width: 480px) {
+
+ body {
+        overflow-x: hidden;
+ }    
  
     .header {
         height: 70px;
@@ -528,6 +535,10 @@ margin-bottom:10px;
  
 /* Extra small — up to 360px */
 @media (max-width: 360px) {
+
+ body {
+        overflow-x: hidden;
+ }    
  
     #header-logo {
         font-size: 16px;
