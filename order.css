@@ -1,0 +1,72 @@
+   body{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.454),rgba(0,0,0,0.65)),
+    url("https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg") center/cover;
+    }
+
+    .container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.pizza-card-about{
+    position: relative;
+    background:#fff5ec;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.pizza-info{
+    padding:20px;
+    text-align:center;
+}
+
+.pizza-info h3{
+    color:#c44536;
+    font-size:22px;
+}
+
+#hero-button-order{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 5px;
+    font-family:'Playfair Display';
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: #fac79c;
+    border-style:none;
+    border-radius: 0px;
+    text-decoration: none;
+    transition:0.5s;
+}
+
+#hero-button-order:hover{
+    color: white;
+    background-color: #c44536;
+    transition:0.5s;    
+}
+
+#confirm-order {
+    color: white;
+    background: linear-gradient(135deg, #25D366, #128C7E);    font-family:'Playfair Display';
+    font-size: 20px;
+    font-weight: bold;    
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+#confirm-order:hover {
+    cursor: pointer;
+    background-color: #FF8C00;
+}

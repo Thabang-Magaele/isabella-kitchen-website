@@ -13,7 +13,7 @@
 
 
         <div class="links">
-            <a id="links" href="#menu">Order</a>
+            <a id="links" href="#home">Home</a>
             <a id="links" href="#about">About</a>
             <a id="links" href="#location">Location</a>
             <a id="links" href="#contact">Contact</a>
@@ -67,10 +67,10 @@
     <div>
         <h1>Isabella's Kitchen</h1>
         <p>Wood Fired • Handmade • South African Inspired</p>
-        <a id="hero-button" href="#menu">Let's Eat!</a>
+        <a id="hero-button" href="#menu-pizza">View Pizzas</a>
 
             <script>
-            document.querySelectorAll('a[href^="#menu"]').forEach(anchor => {
+            document.querySelectorAll('a[href^="#menu-pizza"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -79,67 +79,251 @@
                 });
                 });
             </script>  
+
+        <a id="hero-button" href="#menu-meal">View Meals</a>
+
+            <script>
+            document.querySelectorAll('a[href^="#menu-meal"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+                });
+            </script>  
+
     </div>
 </section>
 
-<section class="info-section1" id="menu">
+<!-- PIZZA SECTION -->
+<section class="info-section1" id="menu-pizza">
     <div class="container">
-        <h2 class="section-title" id="order">Signature Pizzas</h2>
+        <h2 class="section-title" id="order">
+            Signature Pizzas <br>
+        <a id="hero-button-order" href="order.html">Place An Order</a>
+        </h2>
+            <div class="menu-grid">
+                
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Foccacia</h3>
+        <p class="ingredients">Pizza base drizzled with garlic & olive oil</p>
+        <div class="price">R65</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Foccacia with Cheese</h3>
+        <p class="ingredients">Pizza base with garlic, olive oil & cheese</p>
+        <div class="price">R85</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Margherita</h3>
+        <p class="ingredients">Cherry tomato, basil & cheese</p>
+        <div class="price">R80</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Regina</h3>
+        <p class="ingredients">Olives, ham & mushroom</p>
+        <div class="price">R110</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Hawaiian</h3>
+        <p class="ingredients">Pineapple & ham</p>
+        <div class="price">R110</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Trabella</h3>
+        <p class="ingredients">Bacon, feta & avocado</p>
+        <div class="price">R120</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Vegetarian</h3>
+        <p class="ingredients">Olives, peppers, mushroom & tomato</p>
+        <div class="price">R110</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Four Seasons</h3>
+        <p class="ingredients">Bacon, feta, olives, peppers & onion</p>
+        <div class="price">R130</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Carne</h3>
+        <p class="ingredients">Salami, ham & bacon</p>
+        <div class="price">R120</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Chicken</h3>
+        <p class="ingredients">Chicken, peppadew & feta</p>
+        <div class="price">R120</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Four Cheeses</h3>
+        <p class="ingredients">Mozzarella, cheddar, feta & parmesan</p>
+        <div class="price">R125</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Mexicana</h3>
+        <p class="ingredients">Spicy mince, corn, peppers & jalapeño</p>
+        <div class="price">R120</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
+    <div class="pizza-info">
+        <h3>Giordano</h3>
+        <p class="ingredients">Ham, bacon, salami, chicken, olives, garlic, mushroom, pineapple, feta & honey mustard</p>
+        <div class="price">R155</div>
+    </div>
+</div>                
+
+            </div>
+        </div>    
+</section>
+
+<!-- MEAL SECTION -->
+<section class="info-section1" id="menu-meal">
+    <div class="container">
+        <h2 class="section-title" id="order">
+            Affordable Meals <br>
+        <a id="hero-button-order" href="order.html">Place An Order</a>
+        </h2>
             <div class="menu-grid">
 
-                <div class="pizza-card">
-                    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg">
-                    <div class="pizza-info">
-                        <h3>Margherita Classica</h3>
-                        <p class="ingredients">San Marzano tomatoes, mozzarella, basil</p>
-                        <div class="price">R75</div>
-                    </div>
-                </div>
-                
-                <div class="pizza-card">
-                    <img src="images/regina.jpg">
-                    <div class="pizza-info">
-                        <h3>Regina</h3>
-                        <p class="ingredients">Olives, ham, mushroom</p>
-                        <div class="price">R100</div>
-                    </div>
-                </div>
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg">
+    <div class="pizza-info">
+        <h3>Lasagne</h3>
+        <p class="ingredients">Portion for 3</p>
+        <div class="price">R170</div>
+    </div>
+</div>
 
-                <div class="pizza-card">
-                    <img src="images/hawaiian.avif">
-                    <div class="pizza-info">
-                        <h3>Hawaiian</h3>
-                        <p class="ingredients">Pineapple, ham</p>
-                        <div class="price">R95</div>
-                    </div>
-                </div>
-                
-                <div class="pizza-card">
-                    <img src="images/Chicken.webp">
-                    <div class="pizza-info">
-                        <h3>Chicken</h3>
-                        <p class="ingredients">Chicken, peppadew, feta</p>
-                        <div class="price">R115</div>
-                    </div>
-                </div>
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg">
+    <div class="pizza-info">
+        <h3>Meatballs & Fettuccini</h3>
+        <p class="ingredients">Portion for 3</p>
+        <div class="price">R150</div>
+    </div>
+</div>
 
-                <div class="pizza-card">
-                    <img src="images/Biltong.webp">
-                    <div class="pizza-info">
-                        <h3>Biltong</h3>
-                        <p class="ingredients">Biltong, Cherry tomato</p>
-                        <div class="price">R115</div>
-                    </div>
-                </div>
-                
-                <div class="pizza-card">
-                    <img src="images/Mexicana-Pizza.jpg">
-                    <div class="pizza-info">
-                        <h3>Mexicana</h3>
-                        <p class="ingredients">Spicy mince, corn, peppers, jalepeno</p>
-                        <div class="price">R115</div>
-                    </div>
-                </div>                
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg">
+    <div class="pizza-info">
+        <h3>Ham Fettuccini Alfredo</h3>
+        <p class="ingredients">Portion for 2</p>
+        <div class="price">R135</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg">
+    <div class="pizza-info">
+        <h3>Chicken Fettuccini Alfredo</h3>
+        <p class="ingredients">Portion for 2</p>
+        <div class="price">R135</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/628776/pexels-photo-628776.jpeg">
+    <div class="pizza-info">
+        <h3>Spaghetti Bolognese</h3>
+        <p class="ingredients">Portion for 2</p>
+        <div class="price">R135</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg">
+    <div class="pizza-info">
+        <h3>Bobotie & Rice</h3>
+        <p class="ingredients">Traditional baked mince with rice</p>
+        <div class="price">R135</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg">
+    <div class="pizza-info">
+        <h3>Banting Lasagne</h3>
+        <p class="ingredients">Portion for 2</p>
+        <div class="price">R150</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg">
+    <div class="pizza-info">
+        <h3>Chicken Curry & Rice</h3>
+        <p class="ingredients">Portion for 2</p>
+        <div class="price">R150</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg">
+    <div class="pizza-info">
+        <h3>Macaroni & Cheese</h3>
+        <p class="ingredients">Portion for 2</p>
+        <div class="price">R130</div>
+    </div>
+</div>
+
+<div class="pizza-card">
+    <img src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg">
+    <div class="pizza-info">
+        <h3>Chicken & Veggie Soup</h3>
+        <p class="ingredients">Portion for 1</p>
+        <div class="price">R45</div>
+    </div>
+</div>                
 
             </div>
         </div>    

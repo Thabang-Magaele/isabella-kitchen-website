@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="order.js" defer></script>
+    <title>Order</title>
+</head>
+<body>
+    
+<section class="info-section1" id="conact">
+
+    <div class="container">
+            <div class="menu-grid">
+
+                <div class="pizza-card-about">
+                    <div class="pizza-info">
+
+<a id="hero-button-order" href="index.html">Go Back</a>                        
+
+    <h2>Place Your Order</h2>
+    
+    <p>Name: <br>
+    <textarea id="name" name="name" rows="1" cols="30" placeholder="John"></textarea>
+    </p>
+
+    <p>Surname: <br>
+    <textarea id="surname" name="surname" rows="1" cols="30" placeholder="Doe"></textarea>
+    </p>
+
+    <p>Mobile Number: <br>
+    <textarea id="number" name="subject" rows="1" cols="15" placeholder="+27 123 456 7890"></textarea>
+    </p>
+
+    <p>Select Order Type:
+<select name="order-choice" id="order-choice">
+  <option value="#">-- Select--</option>
+  <option value="pizza">Pizza</option>
+  <option value="meal">Meal</option>
+  <option value="pizza & meal">Pizza and Meal</option>
+</select>
+    </p>
+
+    <p hidden id="pizza-size-section" >Select Pizza Size:
+<select name="pizza-size" id="pizza-size">
+  <option value="#">-- Select --</option>
+  <option value="Medium">Medium (R65 - R155)</option>
+  <option value="Large">Large (R80 - R180)</option>
+</select>
+    </p> 
+    
+    <p hidden id="pizza-flavour-section">Select Pizza Flavour:
+<select name="pizza-flavour" id="pizza-flavour">
+
+    <option value="">-- Select --</option>
+
+    <option value="Foccacia">Foccacia</option>
+    <option value="Foccacia with Cheese">Foccacia with Cheese</option>
+    <option value="Margherita">Margherita</option>
+    <option value="Regina">Regina</option>
+    <option value="Hawaiian">Hawaiian</option>
+    <option value="Trabella">Trabella</option>
+    <option value="Vegetarian">Vegetarian</option>
+    <option value="Four Seasons">Four Seasons</option>
+    <option value="Carne">Carne</option>
+    <option value="Bella's">Bella's</option>
+    <option value="Chicken">Chicken</option>
+    <option value="Isabella's">Isabella's</option>
+    <option value="Four Cheeses">Four Cheeses</option>
+    <option value="Romana">Romana</option>
+    <option value="Roberto">Roberto</option>
+    <option value="Biltong">Biltong</option>
+    <option value="Brettiano">Brettiano</option>
+    <option value="Mexicana">Mexicana</option>
+    <option value="Giordano">Giordano</option>
+
+</select>
+    </p>        
+
+    <p hidden id="meal-section">Select Meal Type:
+<select name="meal-choice" id="meal-choice">
+
+    <option value="">-- Select --</option>
+
+    <option value="Lasagne">Lasagne (Portion for 3)</option>
+    <option value="Meatballs & Fettuccini">Meatballs & Fettuccini (Portion for 3)</option>
+    <option value="Ham Fettuccini Alfredo">Ham Fettuccini Alfredo (Portion for 2)</option>
+    <option value="Chicken Fettuccini Alfredo">Chicken Fettuccini Alfredo (Portion for 2)</option>
+    <option value="Spaghetti Bolognese">Spaghetti Bolognese (Portion for 2)</option>
+    <option value="Bobotie & Rice">Bobotie & Rice</option>
+    <option value="Banting Lasagne">Banting Lasagne (Portion for 2)</option>
+    <option value="Chicken Curry & Rice">Chicken Curry & Rice (Portion for 2)</option>
+    <option value="Macaroni & Cheese">Macaroni & Cheese (Portion for 2)</option>
+    <option value="Chicken & Veggie Soup">Chicken & Veggie Soup (Portion for 1)</option>
+
+</select>
+    </p>     
+
+    <p >Add a Message or Special Request: <br>
+    <textarea id="special" name="special" rows="10" cols="25" placeholder="Extra Cheese"></textarea>    
+    </p>
+
+<button id="confirm-order" style="font-size:24px">Place Order Via <i class="fa fa-whatsapp"></i></button>    
+       
+</section>
+
+</body>
+</html>

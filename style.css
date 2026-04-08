@@ -16,7 +16,7 @@ body {
     z-index: 1000;
     width: 100%;
     max-width: 100%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     display: block;
     background-color: #fff5ec;
@@ -113,6 +113,27 @@ body {
 }
 
 #hero-button:hover{
+    color: white;
+    background-color: #c44536;
+    transition:0.5s;    
+}
+
+#hero-button-order{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 5px;
+    font-family:'Playfair Display';
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: #fac79c;
+    border-style:none;
+    border-radius: 0px;
+    text-decoration: none;
+    transition:0.5s;
+}
+
+#hero-button-order:hover{
     color: white;
     background-color: #c44536;
     transition:0.5s;    
