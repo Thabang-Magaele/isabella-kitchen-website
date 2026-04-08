@@ -356,220 +356,256 @@ body {
 /* =====================
    MOBILE MEDIA QUERIES
    ===================== */
-
+ 
 /* Tablet — up to 768px */
 @media (max-width: 768px) {
-
+ 
     .header {
         height: 80px;
         font-size: 24px;
         padding-left: 15px;
     }
-
+ 
     #header-logo {
         font-size: 22px;
         margin: 15px;
         margin-top: 15px;
         padding: 8px;
     }
-
+ 
     .links {
         top: 28%;
         right: 3%;
     }
-
+ 
     #links {
         padding: 8px;
         font-size: 14px;
     }
-
+ 
     .hero {
         margin-top: 10vh;
         padding-bottom: 30vh;
     }
-
+ 
     .hero h1 {
         font-size: 48px;
         letter-spacing: -1px;
     }
-
+ 
     .hero p {
         font-size: 18px;
         margin-top: 6vh;
         padding: 0 20px;
     }
-
+ 
     #hero-button {
         font-size: 22px;
         padding: 10px 18px;
     }
-
+ 
     .container {
         padding: 40px 16px;
     }
-
+ 
+    /* Two pizza/meal cards per row on tablet */
     .menu-grid {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-
+ 
+    /* Keep about section as single column on tablet */
+    .pizza-card-about {
+        grid-column: 1 / -1;
+    }
+ 
     .pizza-card-about img {
         height: 350px;
     }
-
+ 
     .ingredients-about {
         font-size: 17px;
     }
-
+ 
     #map {
         height: 45vh;
         margin: 1.5rem 16px;
         border-radius: 12px;
     }
-
+ 
     .footer {
         font-size: 0.9rem;
     }
 }
-
+ 
 /* Mobile — up to 480px */
 @media (max-width: 480px) {
-
+ 
     .header {
         height: 70px;
         font-size: 20px;
         padding-left: 10px;
     }
-
+ 
     #header-logo {
         font-size: 18px;
         margin: 12px;
         margin-top: 12px;
         padding: 6px 8px;
     }
-
+ 
     .links {
         top: 25%;
         right: 2%;
         display: flex;
         gap: 4px;
     }
-
+ 
     #links {
         padding: 6px 8px;
         font-size: 12px;
     }
-
+ 
     .hero {
         margin-top: 9vh;
         padding-bottom: 20vh;
         padding-left: 16px;
         padding-right: 16px;
     }
-
+ 
     .hero h1 {
         font-size: 34px;
         letter-spacing: -0.5px;
     }
-
+ 
     .hero p {
         font-size: 16px;
         margin-top: 4vh;
     }
-
+ 
     #hero-button {
         font-size: 18px;
         padding: 8px 16px;
         border-radius: 14px;
     }
-
+ 
     .container {
         padding: 30px 12px;
     }
-
+ 
+    /* Two pizza/meal cards per row on mobile */
     .menu-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
-
+ 
+    /* Keep about section as single column on mobile */
+    .pizza-card-about {
+        grid-column: 1 / -1;
+    }
+ 
     .pizza-card img {
-        height: 200px;
+        height: 130px;
     }
-
+ 
     .pizza-card-about img {
         height: 260px;
     }
-
+ 
+    .pizza-info {
+        padding: 10px;
+    }
+ 
     .pizza-info h3 {
-        font-size: 18px;
+        font-size: 14px;
+        margin: 4px 0;
     }
-
+ 
     .ingredients {
-        font-size: 13px;
+        font-size: 11px;
+        margin: 4px 0;
     }
-
+ 
     .ingredients-about {
         font-size: 15px;
     }
-
+ 
     .price {
-        font-size: 18px;
+        font-size: 15px;
     }
-
+ 
     #map {
         height: 40vh;
         margin: 1rem 12px;
         border-radius: 10px;
     }
-
+ 
     .footer {
         font-size: 0.8rem;
         padding: 0 12px;
     }
-
+ 
     .social-icons {
         gap: 12px;
     }
-
+ 
     .social-icon,
     .social-icon-contact {
         width: 32px;
         height: 32px;
     }
 }
-
+ 
 /* Extra small — up to 360px */
 @media (max-width: 360px) {
-
+ 
     #header-logo {
         font-size: 16px;
         margin: 10px;
         padding: 5px 6px;
     }
-
+ 
     #links {
         padding: 5px 6px;
         font-size: 11px;
     }
-
+ 
     .hero h1 {
         font-size: 28px;
     }
-
+ 
     .hero p {
         font-size: 14px;
     }
-
+ 
     #hero-button {
         font-size: 16px;
         padding: 7px 12px;
     }
-
-    .pizza-card img {
-        height: 180px;
+ 
+    /* Still two per row but tighter on very small screens */
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
     }
-
+ 
+    .pizza-card img {
+        height: 110px;
+    }
+ 
     .pizza-card-about img {
         height: 220px;
+    }
+ 
+    .pizza-info h3 {
+        font-size: 12px;
+    }
+ 
+    .ingredients {
+        font-size: 10px;
+    }
+ 
+    .price {
+        font-size: 13px;
     }
 }
