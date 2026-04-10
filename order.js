@@ -138,7 +138,6 @@ document.getElementById("confirm-order").addEventListener("click", function () {
 let totalpizza = 0;
 let totalmeal = 0;
 
-// FIXED quantities
 const pizzaqty = parseInt(document.getElementById("pizza-qty").value) || 0;
 const mealqty = parseInt(document.getElementById("meal-qty").value) || 0;
 

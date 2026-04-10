@@ -451,12 +451,12 @@ body {
  
     .header {
         height: 70px;
-        font-size: 20px;
+        font-size: 50px;
         padding-left: 10px;
     }
  
     #header-logo {
-        font-size: 18px;
+        font-size: 20px;
         margin: 12px;
         margin-top: 12px;
         padding: 6px 8px;
@@ -471,7 +471,7 @@ body {
  
     #links {
         padding: 6px 8px;
-        font-size: 12px;
+        font-size: 15px;
     }
  
     .hero {
@@ -525,7 +525,7 @@ body {
     }
  
     .pizza-info h3 {
-        font-size: 14px;
+        font-size: 20px;
         margin: 4px 0;
     }
  
