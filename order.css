@@ -37,15 +37,15 @@
 
 #hero-button-order{
     margin-top: 20px;
-    display: inline-block;
-    padding: 5px;
+    display:inline-block;
+    padding: 10px;
     font-family:'Playfair Display';
     font-size: 25px;
     font-weight: bold;
     color: black;
     background-color: #fac79c;
     border-style:none;
-    border-radius: 0px;
+    border-radius:20px;
     text-decoration: none;
     transition:0.5s;
 }
@@ -54,6 +54,10 @@
     color: white;
     background-color: #c44536;
     transition:0.5s;    
+}
+
+#total-price {
+    font-size: 40px;
 }
 
 #confirm-order {

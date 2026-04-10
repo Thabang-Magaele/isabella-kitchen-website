@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="order.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-    <script src="order.js" defer></script>
     <title>Order</title>
 </head>
 <body>
@@ -18,7 +17,7 @@
                 <div class="pizza-card-about">
                     <div class="pizza-info">
 
-<a id="hero-button-order" href="index.html">Go Back</a>                        
+<a id="hero-button-order" href="index.html">&larr; Back</a>                        
 
     <h2>Place Your Order</h2>
     
@@ -37,17 +36,17 @@
     <p>Select Order Type:
 <select name="order-choice" id="order-choice">
   <option value="#">-- Select--</option>
-  <option value="pizza">Pizza</option>
-  <option value="meal">Meal</option>
-  <option value="pizza & meal">Pizza and Meal</option>
+  <option value="pizza">Pizza Only</option>
+  <option value="meal">Meal Only</option>
+  <option value="pizza-meal">Pizza and Meal</option>
 </select>
     </p>
 
     <p hidden id="pizza-size-section" >Select Pizza Size:
 <select name="pizza-size" id="pizza-size">
   <option value="#">-- Select --</option>
-  <option value="Medium">Medium (R65 - R155)</option>
-  <option value="Large">Large (R80 - R180)</option>
+  <option value="medium">Medium (R65 - R155)</option>
+  <option value="large">Large (R80 - R180)</option>
 </select>
     </p> 
     
@@ -57,18 +56,18 @@
     <option value="">-- Select --</option>
 
     <option value="Foccacia">Foccacia</option>
-    <option value="Foccacia with Cheese">Foccacia with Cheese</option>
+    <option value="FoccaciaCheese">Foccacia with Cheese</option>
     <option value="Margherita">Margherita</option>
     <option value="Regina">Regina</option>
     <option value="Hawaiian">Hawaiian</option>
     <option value="Trabella">Trabella</option>
     <option value="Vegetarian">Vegetarian</option>
-    <option value="Four Seasons">Four Seasons</option>
+    <option value="FourSeasons">Four Seasons</option>
     <option value="Carne">Carne</option>
-    <option value="Bella's">Bella's</option>
+    <option value="Bellas">Bellas</option>
     <option value="Chicken">Chicken</option>
-    <option value="Isabella's">Isabella's</option>
-    <option value="Four Cheeses">Four Cheeses</option>
+    <option value="Isabellas">Isabellas</option>
+    <option value="FourCheeses">Four Cheeses</option>
     <option value="Romana">Romana</option>
     <option value="Roberto">Roberto</option>
     <option value="Biltong">Biltong</option>
@@ -85,26 +84,43 @@
     <option value="">-- Select --</option>
 
     <option value="Lasagne">Lasagne (Portion for 3)</option>
-    <option value="Meatballs & Fettuccini">Meatballs & Fettuccini (Portion for 3)</option>
-    <option value="Ham Fettuccini Alfredo">Ham Fettuccini Alfredo (Portion for 2)</option>
-    <option value="Chicken Fettuccini Alfredo">Chicken Fettuccini Alfredo (Portion for 2)</option>
-    <option value="Spaghetti Bolognese">Spaghetti Bolognese (Portion for 2)</option>
-    <option value="Bobotie & Rice">Bobotie & Rice</option>
-    <option value="Banting Lasagne">Banting Lasagne (Portion for 2)</option>
-    <option value="Chicken Curry & Rice">Chicken Curry & Rice (Portion for 2)</option>
-    <option value="Macaroni & Cheese">Macaroni & Cheese (Portion for 2)</option>
-    <option value="Chicken & Veggie Soup">Chicken & Veggie Soup (Portion for 1)</option>
+    <option value="MeatballsFettuccini">Meatballs & Fettuccini (Portion for 3)</option>
+    <option value="HamFettucciniAlfredo">Ham Fettuccini Alfredo (Portion for 2)</option>
+    <option value="ChickenFettucciniAlfredo">Chicken Fettuccini Alfredo (Portion for 2)</option>
+    <option value="SpaghettiBolognese">Spaghetti Bolognese (Portion for 2)</option>
+    <option value="BobotieRice">Bobotie & Rice</option>
+    <option value="BantingLasagne">Banting Lasagne (Portion for 2)</option>
+    <option value="ChickenCurryRice">Chicken Curry & Rice (Portion for 2)</option>
+    <option value="MacaroniCheese">Macaroni & Cheese (Portion for 2)</option>
+    <option value="ChickenVeggieSoup">Chicken & Veggie Soup (Portion for 1)</option>
 
 </select>
+
+<!-- Pizza Quantity -->
+<div hidden id="pizza-qty-section">
+    <label>Pizza Quantity:</label>
+    <input type="number" id="pizza-qty" min="1" value="1">
+</div> <br>
+
+<!-- Meal Quantity -->
+<div hidden id="meal-qty-section">
+    <label>Meal Quantity:</label>
+    <input type="number" id="meal-qty" min="1" value="1">
+</div>
+
     </p>     
 
     <p >Add a Message or Special Request: <br>
     <textarea id="special" name="special" rows="10" cols="25" placeholder="Extra Cheese"></textarea>    
     </p>
 
+<!-- Total Price -->
+<h3 id="total-price">Total: R0</h3>
+
 <button id="confirm-order" style="font-size:24px">Place Order Via <i class="fa fa-whatsapp"></i></button>    
        
 </section>
 
 </body>
+    <script src="order.js" defer></script>
 </html>
