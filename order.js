@@ -165,27 +165,29 @@ Name: ${name}
 Surname: ${surname}
 Mobile: ${number}
 
-Order Type: ${orderChoice}
-
 --- Pizza ---
-Flavour: ${pizzaFlavour || "N/A"}
 Size: ${pizzaSize || "N/A"}
+Flavour: ${pizzaFlavour || "N/A"}
 Quantity: ${pizzaqty}
 Price: R${(pizzaqty * (pizzaPrices[pizzaFlavour]?.[pizzaSize])) || 0}
-
---- Meal ---
-Meal: ${mealType || "N/A"}
-Quantity: ${mealqty}
-Price: R${(mealqty * (mealPrices[mealType])) || 0}
 
 TOTAL: R${totalpizza + totalmeal}`;
 
     // Encode message for URL
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "27760915274";
+    const whatsappNumber = "27679824550";
 
     // Open WhatsApp
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
     alert("Thank You, Come Back Soon");
 });
+
+/*
+Order Type: ${orderChoice}
+
+--- Meal ---
+Meal: ${mealType || "N/A"}
+Quantity: ${mealqty}
+Price: R${(mealqty * (mealPrices[mealType])) || 0}
+*/
