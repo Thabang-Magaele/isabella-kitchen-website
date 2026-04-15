@@ -9,115 +9,64 @@
 </head>
 <body>
     
-<section class="info-section1" id="conact">
+<section class="info-section1" id="contact">
 
     <div class="container">
-            <div class="menu-grid">
+        <div class="menu-grid">
+            <div class="pizza-card-about">
+                <div class="pizza-info">
 
-                <div class="pizza-card-about">
-                    <div class="pizza-info">
+                    <a id="hero-button-order" href="index.html">&larr; Back</a>                        
 
-<a id="hero-button-order" href="index.html">&larr; Back</a>                        
+                    <h2>Place Your Order</h2>
+                    
+                    <p>Name: <br>
+                    <textarea id="name" name="name" rows="2" cols="30" placeholder="John"></textarea>
+                    </p>
 
-    <h2>Place Your Order</h2>
-    
-    <p>Name: <br>
-    <textarea id="name" name="name" rows="2" cols="30" placeholder="John"></textarea>
-    </p>
+                    <p>Surname: <br>
+                    <textarea id="surname" name="surname" rows="2" cols="30" placeholder="Doe"></textarea>
+                    </p>
 
-    <p>Surname: <br>
-    <textarea id="surname" name="surname" rows="2" cols="30" placeholder="Doe"></textarea>
-    </p>
+                    <p>Mobile Number: <br>
+                    <textarea id="number" name="subject" rows="2" cols="30" placeholder="+27 123 456 7890"></textarea>
+                    </p>
 
-    <p>Mobile Number: <br>
-    <textarea id="number" name="subject" rows="2" cols="30" placeholder="+27 123 456 7890"></textarea>
-    </p>
+                    <p>Select Order Type:
+                        <select name="order-choice" id="order-choice">
+                            <option value="#">-- Select--</option>
+                            <option value="pizza">Pizza Only</option>
+                        </select>
+                    </p>
 
-    <p>Select Order Type:
-<select name="order-choice" id="order-choice">
-  <option value="#">-- Select--</option>
-  <option value="pizza">Pizza Only</option>
- <!-- <option value="meal">Meal Only</option>
-  <option value="pizza-meal">Pizza and Meal</option>
-  -->
-</select>
-    </p>
+                    <!-- Pizza Builder Section -->
+                    <div hidden id="pizza-builder-section">
+                        <hr>
+                        <h3>🍕 Pizza Selection</h3>
 
-    <p hidden id="pizza-size-section" >Select Pizza Size:
-<select name="pizza-size" id="pizza-size">
-  <option value="#">-- Select --</option>
-  <option value="medium">Medium (R65 - R155)</option>
-  <option value="large">Large (R80 - R180)</option>
-</select>
-    </p> 
-    
-    <p hidden id="pizza-flavour-section">Select Pizza Flavour:
-<select name="pizza-flavour" id="pizza-flavour">
+                        <!-- Pizza Items List -->
+                        <div id="pizza-items-list"></div>
 
-    <option value="">-- Select --</option>
+                        <!-- Add Another Pizza Button -->
+                        <button type="button" id="add-pizza-btn" style="margin-bottom:12px; font-size:16px; padding:8px 16px; cursor:pointer;">
+                            + Add Another Pizza
+                        </button>
+                        <hr>
+                    </div>
 
-    <option value="Foccacia">Foccacia</option>
-    <option value="FoccaciaCheese">Foccacia with Cheese</option>
-    <option value="Margherita">Margherita</option>
-    <option value="Regina">Regina</option>
-    <option value="Hawaiian">Hawaiian</option>
-    <option value="Trabella">Trabella</option>
-    <option value="Vegetarian">Vegetarian</option>
-    <option value="FourSeasons">Four Seasons</option>
-    <option value="Carne">Carne</option>
-    <option value="Bellas">Bellas</option>
-    <option value="Chicken">Chicken</option>
-    <option value="Isabellas">Isabellas</option>
-    <option value="FourCheeses">Four Cheeses</option>
-    <option value="Romana">Romana</option>
-    <option value="Roberto">Roberto</option>
-    <option value="Biltong">Biltong</option>
-    <option value="Brettiano">Brettiano</option>
-    <option value="Mexicana">Mexicana</option>
-    <option value="Giordano">Giordano</option>
+                    <p>Add a Message or Special Request: <br>
+                    <textarea id="special" name="special" rows="10" cols="25" placeholder="No Garnishes"></textarea>    
+                    </p>
 
-</select>
-    </p>        
+                    <!-- Total Price -->
+                    <h3 id="total-price">Total: R0</h3>
 
-    <p hidden id="meal-section">Select Meal Type:
-<select name="meal-choice" id="meal-choice">
+                    <button id="confirm-order" style="font-size:24px">Place Order Via <i class="fa fa-whatsapp"></i></button>    
 
-    <option value="">-- Select --</option>
-
-    <option value="Lasagne">Lasagne (Portion for 3)</option>
-    <option value="MeatballsFettuccini">Meatballs & Fettuccini (Portion for 3)</option>
-    <option value="HamFettucciniAlfredo">Ham Fettuccini Alfredo (Portion for 2)</option>
-    <option value="ChickenFettucciniAlfredo">Chicken Fettuccini Alfredo (Portion for 2)</option>
-    <option value="SpaghettiBolognese">Spaghetti Bolognese (Portion for 2)</option>
-    <option value="BobotieRice">Bobotie & Rice</option>
-    <option value="BantingLasagne">Banting Lasagne (Portion for 2)</option>
-    <option value="ChickenCurryRice">Chicken Curry & Rice (Portion for 2)</option>
-    <option value="MacaroniCheese">Macaroni & Cheese (Portion for 2)</option>
-    <option value="ChickenVeggieSoup">Chicken & Veggie Soup (Portion for 1)</option>
-
-</select>
-    </p>     
-
-<!-- Pizza Quantity -->
-<div hidden id="pizza-qty-section">
-    <label>Pizza Quantity:</label>
-    <input type="number" id="pizza-qty" min="1" value="1">
-</div> <br>
-
-<!-- Meal Quantity -->
-<div hidden id="meal-qty-section">
-    <label>Meal Quantity:</label>
-    <input type="number" id="meal-qty" min="1" value="1">
-</div>    
-
-    <p >Add a Message or Special Request: <br>
-    <textarea id="special" name="special" rows="10" cols="25" placeholder="No Garnishes"></textarea>    
-    </p>
-
-<!-- Total Price -->
-<h3 id="total-price">Total: R0</h3>
-
-<button id="confirm-order" style="font-size:24px">Place Order Via <i class="fa fa-whatsapp"></i></button>    
+                </div>
+            </div>
+        </div>
+    </div>
        
 </section>
 
