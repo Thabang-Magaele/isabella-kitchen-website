@@ -3,637 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="hvQng4WM3BSsgVmo1QeMpaaDswxSI42vhtFAeX2qAc4" />
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <title>kitchen</title>
-</head>
-<body>
-    <header class="header">
-            <a id="header-logo" href="#home">Isabella's Kitchen</a>
-
-
-        <div class="links">
-            <a id="links" href="#home">Home</a>
-            <a id="links" href="#about">About</a>
-            <a id="links" href="#location">Location</a>
-            <a id="links" href="#contact">Contact</a>
-
-            <script>
-            document.querySelectorAll('a[href^="#home"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-                });
-            </script>   
-
-            <script>
-            document.querySelectorAll('a[href^="#menu"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-                });
-            </script>                     
-        </div>
-
-      <!-- Animation for Header-->
-          <script>
-        var lastScrollTop = 0;
-        var header = document.querySelector('.header');
-        // Ensure header element exists
-        if (header) { 
-            window.addEventListener('scroll', function() {
-                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                if (scrollTop > lastScrollTop) {
-                    // Scrolling down - hide header
-                    header.classList.add('header--hidden');
-                } else {
-                    // Scrolling up - show header
-                    header.classList.remove('header--hidden');
-                }
-                lastScrollTop = Math.max(0, scrollTop);
-            });
-        }            
-        </script>
-        
-    </header>
-
-<section class="hero" id="home">
-    <div>
-        <h1>Isabella's Kitchen</h1>
-        <p>Wood Fired • Handmade • South African Inspired</p>
-        <a id="hero-button" href="#menu-pizza">View Pizzas</a>
-
-            <script>
-            document.querySelectorAll('a[href^="#menu-pizza"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-                });
-            </script>  
-<!--
-        <a id="hero-button" href="#menu-meal">View Meals</a>
-
-            <script>
-            document.querySelectorAll('a[href^="#menu-meal"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-                });
-            </script>  
--->
-    </div>
-</section>
-
-<!-- PIZZA SECTION -->
-<section class="info-section1" id="menu-pizza">
-    <div class="container">
-        <h2 class="section-title" id="order">
-            Signature Pizzas <br>
-        <a id="hero-button-order" href="order.html">Place An Order</a>
-        </h2>
-            <div class="menu-grid">
-                
-<div class="pizza-card">
-    <img src="images/pizza/Foccacia.jpg">
-    <div class="pizza-info">
-        <h3>Foccacia</h3>
-        <p class="ingredients">Pizza base drizzled with garlic & olive oil</p>
-        <div class="price-medium">Medium (30cm) R65</div>
-        <div class="price-large">Large (40cm) R80</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/FoccaciaCheese.jpg">
-    <div class="pizza-info">
-        <h3>Foccacia with Cheese</h3>
-        <p class="ingredients">Pizza base with cheese</p>
-        <div class="price-medium">Medium (30cm) R85</div>
-        <div class="price-large">Large (40cm) R95</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Margherita.jpeg">
-    <div class="pizza-info">
-        <h3>Margherita</h3>
-        <p class="ingredients">Cherry tomato, basil & cheese</p>
-        <div class="price-medium">Medium (30cm) R80</div>
-        <div class="price-large">Large (40cm) R95</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Regina.jpeg">
-    <div class="pizza-info">
-        <h3>Regina</h3>
-        <p class="ingredients">Olives, ham & mushroom</p>
-        <div class="price-medium">Medium (30cm) R110</div>
-        <div class="price-large">Large (40cm) R125</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Hawaiian.jpeg">
-    <div class="pizza-info">
-        <h3>Hawaiian</h3>
-        <p class="ingredients">Pineapple & ham</p>
-        <div class="price-medium">Medium (30cm) R110</div>
-        <div class="price-large">Large (40cm) R120</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Trabella.jpeg">
-    <div class="pizza-info">
-        <h3>Trabella</h3>
-        <p class="ingredients">Bacon, feta & avocado</p>
-        <div class="price-medium">Medium (30cm) R120</div>
-        <div class="price-large">Large (40cm) R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Vegetarian.jpeg">
-    <div class="pizza-info">
-        <h3>Vegetarian</h3>
-        <p class="ingredients">Olives, peppers, mushroom & tomato</p>
-        <div class="price-medium">Medium (30cm) R110</div>
-        <div class="price-large">Large (40cm) R125</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/FourSeasons.jpeg">
-    <div class="pizza-info">
-        <h3>Four Seasons</h3>
-        <p class="ingredients">Bacon, feta, olives, peppers & onion</p>
-        <div class="price-medium">Medium (30cm) R130</div>
-        <div class="price-large">Large (40cm) R140</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Carne.jpeg">
-    <div class="pizza-info">
-        <h3>Carne</h3>
-        <p class="ingredients">Salami, ham & bacon</p>
-        <div class="price-medium">Medium (30cm) R120</div>
-        <div class="price-large">Large (40cm) R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Bella's.jpeg">
-    <div class="pizza-info">
-        <h3>Bella's</h3>
-        <p class="ingredients">Salami, pineapple, feta, mushroom, olives & garlic</p>
-        <div class="price-medium">Medium (30cm) R130</div>
-        <div class="price-large">Large (40cm) R140</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Chicken.jpeg">
-    <div class="pizza-info">
-        <h3>Chicken</h3>
-        <p class="ingredients">Chicken, peppadew & feta</p>
-        <div class="price-medium">Medium (30cm) R120</div>
-        <div class="price-large">Large (40cm) R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Isabella's.jpeg">
-    <div class="pizza-info">
-        <h3>Isabella's</h3>
-        <p class="ingredients">Chicken, mushroom, onion & 1000 island sauce</p>
-        <div class="price-medium">Medium (30cm) R120</div>
-        <div class="price-large">Large (40cm) R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/FourCheeses.jpeg">
-    <div class="pizza-info">
-        <h3>Four Cheeses</h3>
-        <p class="ingredients">Mozzarella, cheddar, feta & parmesan</p>
-        <div class="price-medium">Medium (30cm) R125</div>
-        <div class="price-large">Large (40cm) R140</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Romana.jpeg">
-    <div class="pizza-info">
-        <h3>Romana</h3>
-        <p class="ingredients">Capers, anchovies, garlic & chilli</p>
-        <div class="price-medium">Medium (30cm) R120</div>
-        <div class="price-large">Large (40cm) R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Roberto.jpeg">
-    <div class="pizza-info">
-        <h3>Roberto</h3>
-        <p class="ingredients">Salami, garlic & parsley cream butter</p>
-        <div class="price-medium">Medium (30cm) R120</div>
-        <div class="price-large">Large (40cm) R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Biltong.jpeg">
-    <div class="pizza-info">
-        <h3>Biltong</h3>
-        <p class="ingredients">Biltong & cherry tomato</p>
-        <div class="price-medium">Medium (30cm) R120</div>
-        <div class="price-large">Large (40cm) R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Brettiano.jpeg">
-    <div class="pizza-info">
-        <h3>Brettiano</h3>
-        <p class="ingredients">Roasted beetroot, rocket & feta</p>
-        <div class="price-medium">Medium (30cm) R110</div>
-        <div class="price-large">Large (40cm) R125</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Mexicana.jpeg">
-    <div class="pizza-info">
-        <h3>Mexicana</h3>
-        <p class="ingredients">Spicy mince, corn, peppers & jalapeno</p>
-        <div class="price-medium">Medium (30cm) R120</div>
-        <div class="price-large">Large (40cm) R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/pizza/Giordano.jpeg">
-    <div class="pizza-info">
-        <h3>Giordano</h3>
-        <p class="ingredients">Ham, bacon, salami, chicken, olives, garlic, mushroom, pineapple, feta & honey mustard</p>
-        <div class="price-medium">Medium (30cm) R155</div>
-        <div class="price-large">Large (40cm) R180</div>
-    </div>
-</div>           
-
-            </div>
-        </div>    
-</section>
-
-<!-- MEAL SECTION
-<section class="info-section1" id="menu-meal">
-    <div class="container">
-        <h2 class="section-title" id="order">
-            Affordable Meals <br>
-        <a id="hero-button-order" href="order.html">Place An Order</a>
-        </h2>
-            <div class="menu-grid">
-
-<div class="pizza-card">
-    <img src="images/meal/Lasagne.jpeg">
-    <div class="pizza-info">
-        <h3>Lasagne</h3>
-        <p class="ingredients">Portion for 3</p>
-        <div class="price">R170</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/Meatballs.jpeg">
-    <div class="pizza-info">
-        <h3>Meatballs & Fettuccini</h3>
-        <p class="ingredients">Portion for 3</p>
-        <div class="price">R150</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/Fettuccini.jpeg">
-    <div class="pizza-info">
-        <h3>Ham Fettuccini Alfredo</h3>
-        <p class="ingredients">Portion for 2</p>
-        <div class="price">R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/Chicken.jpeg">
-    <div class="pizza-info">
-        <h3>Chicken Fettuccini Alfredo</h3>
-        <p class="ingredients">Portion for 2</p>
-        <div class="price">R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/Bolognese.jpeg">
-    <div class="pizza-info">
-        <h3>Spaghetti Bolognese</h3>
-        <p class="ingredients">Portion for 2</p>
-        <div class="price">R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/Bobotie.jpeg">
-    <div class="pizza-info">
-        <h3>Bobotie & Rice</h3>
-        <p class="ingredients">Traditional baked mince with rice</p>
-        <div class="price">R135</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/Banting.jpeg">
-    <div class="pizza-info">
-        <h3>Banting Lasagne</h3>
-        <p class="ingredients">Portion for 2</p>
-        <div class="price">R150</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/ChickenCurry.jpeg">
-    <div class="pizza-info">
-        <h3>Chicken Curry & Rice</h3>
-        <p class="ingredients">Portion for 2</p>
-        <div class="price">R150</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/Macaroni.jpeg">
-    <div class="pizza-info">
-        <h3>Macaroni & Cheese</h3>
-        <p class="ingredients">Portion for 2</p>
-        <div class="price">R130</div>
-    </div>
-</div>
-
-<div class="pizza-card">
-    <img src="images/meal/ChickenSoup.jpeg">
-    <div class="pizza-info">
-        <h3>Chicken & Veggie Soup</h3>
-        <p class="ingredients">Portion for 1</p>
-        <div class="price">R45</div>
-    </div>
-</div>                
-
-            </div>
-        </div>    
-</section>
- -->
-
-<section class="info-section1" id="about">
-    <div class="container">
-        <h2 class="section-title" id="order">About Us</h2>
-            <div class="menu-grid">
-
-                <div class="pizza-card-about">
-                    <div class="pizza-info">
-                        <h3>Not Just Pizza</h3>
-                        <p class="ingredients-about">
-                            At Isabella's Kitchen, food is more than a meal — it's an experience. 
-                            We bring people together through warm hospitality, fresh ingredients, 
-                            and recipes inspired by both Italian tradition and South African flavour. 
-                            Every visit is about comfort, community, and unforgettable taste.
-                        </p>
-                    </div>
-                    <img src="images/about1.jpg">
-                </div>
-                
-                <div class="pizza-card-about">
-                    <img src="images/about2.jpg">
-                    <div class="pizza-info">
-                        <h3>All Authentic Italian</h3>
-                        <p class="ingredients-about">
-                            Our pizzas are crafted using traditional Italian techniques, from slow-fermented dough 
-                            to rich tomato bases and carefully selected toppings. Cooked in a wood-fired oven, 
-                            each pizza delivers the perfect balance of crispness, flavour, and authenticity.
-                        </p>                                              
-                    </div>
-                </div>
-
-                <div class="pizza-card-about">
-                    <div class="pizza-info">
-                        <h3>Handmade With Love</h3>
-                        <p class="ingredients-about">
-                            Every pizza is prepared by hand, using fresh ingredients and genuine passion. 
-                            From stretching the dough to the final garnish, we believe great food comes 
-                            from patience, care, and attention to detail — because quality should always 
-                            be tasted in every bite.
-                        </p>                                             
-                    </div>
-                    <img src="images/about3.jpg">
-
-                </div>
-             
-
-            </div>
-        </div>  
-        
-            <script>
-            document.querySelectorAll('a[href^="#about"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-                });
-            </script>         
-
-</section>
-
-<section class="info-section1" id="location">
-    <div class="container">
-        <h2 class="section-title" id="#">Where We're Located</h2>
-            <div class="menu-grid">
-
-                <div class="pizza-card-about">
-                    <div class="pizza-info">
-                        <h3></h3>
-                        
-                       <a href="https://maps.app.goo.gl/8ShXHWSvtqzCDJJFA" id="maps-link" target="_blank"><h2>Click Here For Directions</h2> </a>
-                       
-                       <div id="map">
-                        <div class="loader">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>      
-                    </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>      
-        
-            <script>
-            document.querySelectorAll('a[href^="#location"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-                });
-            </script>          
-
-</section>
-
-<section class="info-section1" id="conact">
-    <div class="container">
-        <h2 class="section-title" id="contact">Contact Us</h2>
-            <div class="menu-grid">
-
-                <div class="pizza-card-about">
-                    <div class="pizza-info">
-                        <h3>We Love Feedback! Reach Out</h3>
-
-    <h2>Send Us A Message</h2>
-    
-    <p>Email address:</p>
-    <textarea id="email-address" name="email-address" rows="2" cols="50" placeholder="example@gmail.com"></textarea>
-    <br>
-
-    <p>Subject:</p>
-    <textarea id="subject" name="subject" rows="2" cols="50" placeholder="Enter the subject..."></textarea>
-    <br>
-
-    <p>Message:</p>
-    <textarea id="message" name="message" rows="10" cols="50" placeholder="Write your message here..."></textarea>
-    <br>
-
-    <button class="submit" type="submit" onclick="sendFeedback()">Submit</button>
-
-    <script>
-      function sendFeedback() {
-        const email = document.getElementById('email-address').value.trim();
-        const subject = document.getElementById('subject').value.trim();
-        const message = document.getElementById('message').value.trim();
-
-        if (!email || !subject || !message) {
-          alert("Please fill in all fields before submitting.");
-          return;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <title>Isabella's Kitchen — Service Suspended</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
         }
 
-        const mailtoLink = `mailto:isabellaskitch@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + email + "\n\n" + message)}`;
-        window.location.href = mailtoLink;
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #fff5ec;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Lato', sans-serif;
+        }
 
-        alert("Thank you for your feedback! We'll get back to you as soon as possible.");
-      }
-    </script>                                            
-                    </div>
-                </div>
-            </div>
-        </div>  
-        
-            <script>
-            document.querySelectorAll('a[href^="#contact"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-                });
-            </script>         
+        .brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: bold;
+            color: #c44536;
+            letter-spacing: -1px;
+            margin-bottom: 48px;
+        }
 
-</section>
+        .card {
+            background: #fff;
+            border-top: 4px solid #c44536;
+            border-radius: 4px;
+            padding: 52px 48px;
+            max-width: 520px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+        }
 
+        .icon {
+            font-size: 52px;
+            margin-bottom: 20px;
+            display: block;
+        }
 
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #c44536;
+            font-size: 26px;
+            margin: 0 0 12px;
+        }
 
-    <footer class="footer">
-           <p>Isabella's Kitchen <br> </p>
+        .divider {
+            width: 48px;
+            height: 2px;
+            background: #c44536;
+            margin: 0 auto 24px;
+            border: none;
+        }
 
-           <p>Check Out Our Socials <br> </p>
+        p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0 0 16px;
+        }
 
-            <div class="social-icons">
-             <!--  <a href="https://www.instagram.com/h2oautospawhiteriver/" title="Instagram" target="_blank"><ion-icon name="logo-instagram"  class="social-icon" ></ion-icon> </a> -->
-               <a href="https://web.facebook.com/isabellasfood/?_rdc=1&_rdr#" title="Facebook" target="_blank"> <ion-icon name="logo-facebook"  class="social-icon" ></ion-icon> </a> 
-              <!-- <a href="https://www.tiktok.com/@h2oautospa.whiter?lang=en-GB" title="TikTok" target="_blank"> <ion-icon name="logo-tiktok"  class="social-icon" ></ion-icon> </a>                 -->
-               <a href="https://x.com/isabellasfood" title="Twitter" target="_blank"> <ion-icon name="logo-twitter"  class="social-icon" ></ion-icon> </a>                 
-            </div>         
+        .notice {
+            background: #fff5ec;
+            border-left: 3px solid #c44536;
+            border-radius: 2px;
+            padding: 14px 18px;
+            text-align: left;
+            font-size: 14px;
+            color: #444;
+            margin-top: 28px;
+        }
 
-    <p>Address: Cnr Impala, Danie Joubert St, White River, 1240</p>
-    <p>
-        Trading Hours: <br> 
-        Monday: 09:00 - 19:00 <br>
-        Tuesday: 09:00 - 19:00 <br>
-        Wednesday: 09:00 - 19:00 <br>
-        Thursday: 09:00 - 19:00 <br>
-        Friday: 09:00 - 19:00 <br>
-        Saturday: 09:00 - 19:00 <br>
-        Sunday: Closed <br>
-    </p>
-    <p>© 2026 Thabang Magaele. All rights reserved.</p>
+        .notice strong {
+            color: #c44536;
+        }
+
+        .contact-link {
+            color: #c44536;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .contact-link:hover {
+            border-color: #c44536;
+        }
+
+        footer {
+            margin-top: 36px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brand">Isabella's Kitchen</div>
+
+    <div class="card">
+        <span class="icon">🔒</span>
+        <h1>Website Currently Unavailable</h1>
+        <hr class="divider">
+
+        <p>
+            We're sorry — this website has been temporarily suspended due to an outstanding payment on the hosting account.
+        </p>
+        <p>
+            To restore the site and resume service for your customers, please settle the outstanding balance as soon as possible.
+        </p>
+
+        <div class="notice">
+            <strong>Action required for the site owner:</strong><br>
+            Please contact your web service provider to clear the overdue payment and reactivate your account. Once payment is confirmed, the website will be restored promptly.
+            <br><br>
+            Need help? Reach out to
+            <a class="contact-link" href="mailto:magaelethabang@gmail.com">magaelethabang@gmail.com</a>.
+        </div>
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> Isabella's Kitchen. All rights reserved.
     </footer>
 
-<script>
-/* cart 
-let cart=0
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
-function orderPizza(name,price){
-
-cart++
-
-document.getElementById("cartCount").innerText=cart
-
-let modal=document.getElementById("modal")
-
-modal.innerHTML=`🍕 ${name} added<br><small>R${price}</small>`
-
-modal.classList.add("show")
-
-setTimeout(()=>{
-modal.classList.remove("show")
-},2500)
-
-}
-*/
-
-/* scroll animation */
-
-const cards=document.querySelectorAll(".pizza-card")
-
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.style.opacity="1"
-entry.target.style.transform="translateY(0)"
-}
-})
-})
-
-cards.forEach(card=>{
-card.style.opacity="0"
-card.style.transform="translateY(40px)"
-card.style.transition="all .8s"
-observer.observe(card)
-})
-
-</script>    
 </body>
-    <script src="maps.js"></script>        
 </html>
